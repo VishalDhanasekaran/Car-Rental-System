@@ -10,8 +10,8 @@ uvicorn app.main:app --reload &
 BACKEND_PID=$!
 
 # Start Frontend
-cd ../frontend
-echo "🌍 Running React frontend at http://localhost:3000"
+cd ../car-rental-frontend
+echo "🌍 Running React Car Rental App at http://localhost:3000"
 npm start &
 
 # Wait for user to stop

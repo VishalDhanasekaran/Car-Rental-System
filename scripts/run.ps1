@@ -6,5 +6,5 @@ cd ../backend
 Start-Process powershell -ArgumentList "uvicorn app.main:app --reload"
 
 # Start Frontend
-cd ../frontend
+cd ../car-rental-frontend
 Start-Process powershell -ArgumentList "npm start"

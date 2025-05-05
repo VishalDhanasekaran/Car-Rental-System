@@ -7,7 +7,7 @@ echo "📦 Installing Python dependencies..."
 cd ../backend
 python3 -m venv venv
 source venv/bin/activate
-pip install --upgrade pip
+echo "Virtual Environment Activated..."
 pip install -r requirements.txt
 
 # Database Initialization (Assumes SQLite or migration tool)
@@ -16,7 +16,10 @@ alembic upgrade head 2>/dev/null || echo "⚠️ Alembic migration skipped (if n
 
 # Frontend Setup
 echo "🌐 Installing frontend dependencies..."
-cd ../frontend
+echo "Current path: "
+pwd
+cd ../car-rental-frontend
+echo "changed to fronted directory..."
 npm install
 
 echo "✅ Setup completed. Use run.sh to start the system."

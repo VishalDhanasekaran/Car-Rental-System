@@ -14,7 +14,7 @@ alembic upgrade head
 
 # Frontend Setup
 Write-Host "🌐 Installing frontend dependencies..."
-cd ../frontend
+cd ../car-rental-frontend
 npm install
 
 Write-Host "✅ Setup completed. Use run.ps1 to start the system."
